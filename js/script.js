@@ -10,7 +10,7 @@ function generateGrid(size) {
   while (containerDiv.firstChild) {
     containerDiv.removeChild(containerDiv.lastChild);
   }
-  const flexBasis = 100/size;
+  const flexBasis = 100 / size;
   for (let i = 0; i < size * size; ++i) {
     const createdDiv = document.createElement("div");
     createdDiv.className = "drawing-square";
@@ -30,8 +30,10 @@ sizeButton.addEventListener("click", () => {
     sizePrompt = prompt("Enter a size");
     size = parseInt(sizePrompt);
     console.log(size);
-    } while (sizePrompt !== null && (isNaN(size) || size < 4))
-  generateGrid(size);
+  } while (sizePrompt !== null && (isNaN(size) || size < 4))
+  if (sizePrompt !== null) {
+    generateGrid(size);
+  }
 });
 
 generateGrid(16);
