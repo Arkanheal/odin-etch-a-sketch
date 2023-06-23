@@ -17,7 +17,8 @@ body {
 .container {
   justify-content: center;
   align-items: center;
-  flex: 0 1 40%;
+  flex: 1 1 40%;
+  max-width: 90vh;
 
   display: flex;
   flex-wrap: wrap;
