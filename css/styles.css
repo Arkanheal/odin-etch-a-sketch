@@ -1,35 +1,31 @@
-/*
-* {
-  border: 2px solid red;
-}
-*/
-
 body {
   height: 100vh;
   margin: 0;
+
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
   display: flex;
-  background-color: white;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
 
 .size-button {
-  padding: 8px 24px;
-  margin: 0;
   background-color: blueviolet;
+
   color: black;
   font-size: 24px;
+
   border: 2px solid violet;
   border-radius: 5px;
+
+  padding: 8px 24px;
 }
 
 /* GRID */
 
 .container {
-
   display: flex;
   flex-wrap: wrap;
 
